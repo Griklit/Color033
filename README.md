@@ -1,6 +1,10 @@
 # Color033
 
-通过`\033`字符实现彩色文字样式打印
+---
+
+通过`\033`字符实现彩色文字样式打印，并提供了默认样式可供参考使用，仅适用于支持`\033`的IDE使用。
+
+---
 
 ```python
 from color033.default_style import warning, info, error, message
