@@ -9,7 +9,7 @@ print(warning('This is a warning example.'))  # 打印默认警告样式文本
 print(info('This is a info example.'))  # 打印默认信息样式文本
 print(message('This is a message example.'))  # 打印默认消息样式文本
 print()
-print(Color033('This is a Color033 example.', color='green', under_line=True))  # 不通过样式模板创建带样式文本
+print(Color033('This is a color033 example.', color='green', under_line=True))  # 不通过样式模板创建带样式文本
 print()
 print(Color033(color='blue', back_color='red', under_line=True).__repr__())  # 打印样式参数
 print(my_style('__info__'))  # 打印样式参数
