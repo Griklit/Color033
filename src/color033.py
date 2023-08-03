@@ -68,7 +68,7 @@ class Color033:
             else:
                 d['back_color'] = reverse_back_color_table[f';{tag}']
         return "\033[0m<\033[34mclass \033[0m'\033[34;1mColor033\033[0m' " + \
-               ', '.join([f'\033[31m{k}\033[0m=\033[36m{v}\033[0m' for k, v in d.items()]) + '\033[0m>'
+            ', '.join([f'\033[31m{k}\033[0m=\033[36m{v}\033[0m' for k, v in d.items()]) + '\033[0m>'
 
 
 def color033(color: str | int = '', back_color: str | int = '', high_light: bool = False, low_light=False,
