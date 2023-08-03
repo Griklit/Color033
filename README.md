@@ -3,8 +3,8 @@
 通过`\033`字符实现彩色文字样式打印，并提供了默认样式可供参考使用，仅适用于支持`\033`的IDE使用。
 
 ```python
-from color033.default_style import warning, info, error, message
-from color033 import color033, Color033
+from src.default_style import warning, info, error, message
+from src import color033, Color033
 
 my_style = color033(color='purple', back_color='aqua', under_line=True, high_light=True, inversion=True)  # 自定义样式
 print(my_style('This is my style!'))  # 打印套用自定义样式的文本
@@ -14,7 +14,7 @@ print(warning('This is a warning example.'))  # 打印默认警告样式文本
 print(info('This is a info example.'))  # 打印默认信息样式文本
 print(message('This is a message example.'))  # 打印默认消息样式文本
 print()
-print(Color033('This is a color033 example.', color='green', under_line=True))  # 不通过样式模板创建带样式文本
+print(Color033('This is a src example.', color='green', under_line=True))  # 不通过样式模板创建带样式文本
 print()
 print(Color033(color='blue', back_color='red', under_line=True).__repr__())  # 打印样式参数
 print(my_style('__info__'))  # 打印样式参数
@@ -32,7 +32,7 @@ for back in COLORS:
         print(end='    ')
     print()
 print()
-print('color033:', color033.__doc__)  # 文档
+print('src:', color033.__doc__)  # 文档
 
 ```
 

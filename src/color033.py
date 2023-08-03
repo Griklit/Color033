@@ -86,7 +86,7 @@ def color033(color: str | int = '', back_color: str | int = '', high_light: bool
     @param inversion: 反显
     @param blanking: 消隐（无效）
     @param reset: 是否在打印完成后重置颜色
-    @return: color033.color_text
+    @return: src.color_text
     """
     return Color033(color=color, back_color=back_color, high_light=high_light, low_light=low_light,
                     under_line=under_line, twinkle=twinkle, inversion=inversion, blanking=blanking,
